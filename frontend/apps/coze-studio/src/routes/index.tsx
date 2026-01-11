@@ -45,6 +45,9 @@ import {
   DatabaseDetail,
   ExplorePluginPage,
   ExploreTemplatePage,
+  evefrontierSubMenu,
+  EveFrontierLayout,
+  PathPlanning,
 } from './async-components';
 
 export const router: ReturnType<typeof createBrowserRouter> =
@@ -288,6 +291,31 @@ export const router: ReturnType<typeof createBrowserRouter> =
               element: <ExploreTemplatePage />,
               loader: () => ({
                 type: 'template',
+              }),
+            },
+          ],
+        },
+
+        // evefrontier
+        {
+          path: 'evefrontier',
+          Component: EveFrontierLayout,
+          loader: () => ({
+            hasSider: true,
+            requireAuth: true,
+            subMenu: evefrontierSubMenu,
+            menuKey: 'evefrontier',
+          }),
+          children: [
+            {
+              index: true,
+              element: <Navigate to="path-planning" replace />,
+            },
+            {
+              path: 'path-planning',
+              element: <PathPlanning />,
+              loader: () => ({
+                subMenuKey: 'path-planning',
               }),
             },
           ],

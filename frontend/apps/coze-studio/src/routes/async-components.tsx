@@ -150,3 +150,24 @@ export const ExplorePluginPage = lazy(() =>
     default: exps.PluginPage,
   })),
 );
+
+// evefrontier sub menu
+export const evefrontierSubMenu = lazy(() =>
+  import('../pages/evefrontier/sub-menu').then(exps => ({
+    default: exps.EveFrontierSubMenu,
+  })),
+);
+
+// evefrontier layout
+export const EveFrontierLayout = lazy(() =>
+  import('../pages/evefrontier/layout').then(exps => ({
+    default: exps.EveFrontierLayout,
+  })),
+);
+
+// path planning page
+export const PathPlanning = lazy(() =>
+  import('../pages/evefrontier/path-planning').then(exps => ({
+    default: exps.PathPlanning,
+  })),
+);

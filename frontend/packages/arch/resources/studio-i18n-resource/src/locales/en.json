@@ -8458,6 +8458,8 @@
   "menu_title_workspace": "Teams",
   "menu_widgets": "Cards",
   "menu_workflows": "Workflows",
+  "navigation_evefrontier": "EveFrontier",
+  "evefrontier_path_planning": "Path Planning",
   "merge_duplicate_tools": "Merge duplicate tools",
   "messageListLoading": "Loading",
   "messageListRetry": "Failed to retrieve historical data, {retry}",

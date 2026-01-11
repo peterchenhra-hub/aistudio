@@ -9601,6 +9601,8 @@
   "menu_title_workspace": "工作空间",
   "menu_widgets": "卡片",
   "menu_workflows": "工作流",
+  "navigation_evefrontier": "EveFrontier",
+  "evefrontier_path_planning": "路径规划",
   "merge_duplicate_tools": "合并重复工具",
   "messageListLoading": "加载中",
   "messageListRetry": "获取历史数据失败，{retry}",

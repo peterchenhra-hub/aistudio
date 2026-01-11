@@ -74,6 +74,13 @@ export const GlobalLayoutComposed: FC<PropsWithChildren> = ({ children }) => {
             path: '/explore',
             dataTestId: 'layout_explore-button',
           },
+          {
+            title: I18n.t('navigation_evefrontier'),
+            icon: <IconCozDocument />,
+            activeIcon: <IconCozDocument />,
+            path: '/evefrontier',
+            dataTestId: 'layout_evefrontier-button',
+          },
         ]}
         extras={[
           {
